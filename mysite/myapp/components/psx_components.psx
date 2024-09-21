@@ -1,0 +1,17 @@
+from packed import psx_import
+from info import some_data
+
+Header = psx_import('Header.psx', 'Header')
+Greeting = psx_import('Greeting.psx', 'Greeting')
+
+def main():
+    return (
+        <div>
+            <Header />
+            <Greeting name="Sue" style={{background_color: "red";}} />
+            <Greeting name="Sam" />
+            <Greeting name="Mary" />
+            <Greeting name="John" />
+            <Greeting name={some_data} />
+        </div>
+    )
