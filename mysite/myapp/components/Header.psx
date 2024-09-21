@@ -6,7 +6,7 @@ class Header(Component):
                 <div class="logo">
                     <a href="#">
                         Company Name
-                        <img src='{% static "company-logo.png" %}'>
+                        
                     </a>
                 </div>
                 <h1>Sample Website</h1>

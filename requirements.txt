@@ -4,3 +4,4 @@ Django==5.1.1
 packed==0.2.0
 pyPEG2==2.15.1
 sqlparse==0.5.1
+u-msgpack-python==2.7.2
