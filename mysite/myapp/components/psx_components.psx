@@ -8,7 +8,7 @@ def main():
     return (
         <div>
             <Header />
-            <Greeting name="Sue" style={{background_color: "red";}} />
+            <Greeting name="Sue" style={{background_color: "red"}} />
             <Greeting name="Sam" />
             <Greeting name="Mary" />
             <Greeting name="John" />

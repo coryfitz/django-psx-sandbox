@@ -2,13 +2,13 @@ class Header(Component):
     def psx_render(self):
 
         return (
-            <header style="background-color:grey;">
-                <div class="logo">
+            <header style={{background_color: "grey"}}>
+                <div class="logo"  style={{display: "flex", justify_content: "center"}}>
                     <a href="#">
-                        Company Name
-                        
+                        <img src="/static/company-logo.png">
                     </a>
                 </div>
                 <h1>Sample Website</h1>
+                <p style={{font_style: "italic", color: "blue"}}>Sample Text</p>
             </header>
             )
