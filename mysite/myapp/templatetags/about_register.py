@@ -1,15 +1,16 @@
 from pathlib import Path
 from django.conf import settings
 from django import template
-from packed import Elem, Component, psx_import
+from packed import Elem, Component, psx_import, packed
 
 register = template.Library()
 
 @register.simple_tag
+@packed
 def about_psx():
 
-    psx_file_path = Path(settings.BASE_DIR) / 'myapp' / 'templatetags' / 'about.psx'
+    psx_file_path = Path(settings.BASE_DIR) / 'myapp' / 'components' / 'psx_components_about.psx'
+    
+    main = psx_import(psx_file_path, 'main')
 
-    about_psx = psx_import(psx_file_path, 'about_psx')
-
-    return about_psx()
+    return main()

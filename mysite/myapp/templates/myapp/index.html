@@ -1,10 +1,13 @@
-{% load static %}
+{% extends "base.html" %}
+
+{% block content %}
+
 {% load psx_syntax_register %}
 
-<script src="https://cdn.tailwindcss.com"></script>
-
 {% autoescape off %}
-<body style="margin: 0;">
+<body class="m-0 overflow-x-hidden">
 {% psx_syntax %}
 </body>
 {% endautoescape %}
+
+{% endblock %}

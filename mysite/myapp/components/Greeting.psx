@@ -1,6 +1,0 @@
-class Greeting(Component):
-    def psx_render(self):
-        name = self.props['name']
-        return <p>Hello, {name}</p>
-        
-

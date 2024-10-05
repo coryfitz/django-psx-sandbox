@@ -1,10 +1,12 @@
 from packed import psx_import
 
 About = psx_import('About.psx', 'About')
+Header = psx_import('Header.psx', 'Header')
 
 def main():
     return (
         <div>
+            <Header />
             <About />
         </div>
     )

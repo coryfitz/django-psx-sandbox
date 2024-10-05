@@ -3,7 +3,7 @@ class Header(Component):
         return (
             <header class="flex justify-between items-center p-5 bg-white shadow-md sticky top-0 z-50">
                 <div class="logo">
-                    <a href="#" class="text-lg">
+                    <a href="/myapp" class="text-2xl">
                         PSX
                     </a>
                 </div>

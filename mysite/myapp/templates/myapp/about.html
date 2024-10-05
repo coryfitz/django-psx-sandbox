@@ -1,5 +1,10 @@
+{% extends "base.html" %}
 {% load about_register %}
+
+{% block content %}
 
 {% autoescape off %}
 {% about_psx %}
 {% endautoescape %}
+
+{% endblock %}
