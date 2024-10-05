@@ -1,5 +1,4 @@
 from packed import psx_import
-from info import some_data
 
 Header = psx_import('Header.psx', 'Header')
 Body = psx_import('Body.psx', 'Body')
