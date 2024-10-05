@@ -1,0 +1,12 @@
+class Body(Component):
+    def psx_render(self):
+
+        return (
+            <div class="flex justify-center items-center min-h-screen">
+                <div class="flex-col">
+                    <p class="text-lg">JSX Syntax</p>
+                    <p class="text-lg">but in Python</p>
+                </div>
+                <img src="/static/snippet.png" class="w-1/2 h-auto">
+            </div>
+        )

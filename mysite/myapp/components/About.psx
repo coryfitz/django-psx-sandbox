@@ -1,0 +1,5 @@
+class About(Component):
+    def psx_render(self):
+        return (
+            <p>About PSX</p>
+            )

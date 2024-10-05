@@ -1,14 +1,22 @@
 class Header(Component):
     def psx_render(self):
-
         return (
-            <header style={{background_color: "grey"}}>
-                <div class="logo"  style={{display: "flex", justify_content: "center"}}>
-                    <a href="#">
-                        <img src="/static/company-logo.png">
+            <header class="flex justify-between items-center p-5 bg-white shadow-md sticky top-0 z-50">
+                <div class="logo">
+                    <a href="#" class="text-lg">
+                        PSX
                     </a>
                 </div>
-                <h1>Sample Website</h1>
-                <p style={{font_style: "italic", color: "blue"}}>Sample Text</p>
+                <nav class="flex space-x-6">
+                    <a href="about" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">
+                        About
+                    </a>
+                    <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">
+                        Examples
+                    </a>
+                    <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">
+                        Docs
+                    </a>
+                </nav>
             </header>
             )
