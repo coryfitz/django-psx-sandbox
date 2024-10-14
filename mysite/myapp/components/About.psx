@@ -1,15 +1,12 @@
-class About(Component):
-    def psx_render(self):
-        return (
-            <div class="flex items-center justify-center min-h-screen bg-gray-100">
-                <div class="bg-white shadow-lg rounded-lg p-8 max-w-lg">
-                    <h1 class="text-2xl font-semibold mb-4">PSX is an effort to bring JSX syntax into the Python world.</h1>
-                    <p class="mb-4">
-                        Similar to how JSX stands for JavaScript Syntax Extension, PSX stands for Python Syntax Extension.
-                    </p>
-                    <p>
-                        PSX began life as a project called Packed by Michael Jones and was extended and rebranded as PSX by Cory Fitz.
-                    </p>
-                </div>
-            </div>
-            )
+from psx_syntax import psx_import
+
+AboutCard = psx_import('AboutCard.psx', 'AboutCard')
+Header = psx_import('Header.psx', 'Header')
+
+def About():
+    return (
+        <div>
+            <Header />
+            <AboutCard />
+        </div>
+    )

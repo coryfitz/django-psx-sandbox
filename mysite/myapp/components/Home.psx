@@ -1,9 +1,9 @@
-from packed import psx_import
+from psx_syntax import psx_import
 
-Header = psx_import('Header.psx', 'Header')
 Body = psx_import('Body.psx', 'Body')
+Header = psx_import('Header.psx', 'Header')
 
-def main():
+def Home():
     return (
         <div>
             <Header />
